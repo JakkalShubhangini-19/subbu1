@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Jakkal Shubhangini</title>
+    <script src="https://kit.fontawesome.com/655c589984.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <!-- logo  -->
+        <img align="right" src="C:\Users\jakka\Downloads\PIC.jpeg" height="300" width="250">" 
+
+        <ul class="navBar" id="nav">
+            <li><a href="#"> Home</a></li>
+            <li><a href="#skills"> Skills</a></li>
+            <li><a href="#projects"> Projects</a></li>
+            <button><a href="#contact"> Contact</a></button>
+        </ul>
+
+        <div id="btn"><i class="fa-solid fa-bars" id="icon"></i></div>
+
+
+        <!-- responsiveness  -->
+    </header>
+    <main>
+        <div class="image-box">
+        </div>
+        <p>Hello World!</p>
+        <h1>I'm Shubhangini</h1>
+        <div class="des">
+            <p class="description">I'am passionate web developer with a keen eye for design
+                and a 
+                flair for creating seamless,user-froendly digital
+                experience with 
+                a strong foundation in front-end and back front-end
+                technologies,I 
+                specialize in turning ideas into beautifully crafted
+                websites and
+                web applications.</p>
+        </div>
+    </main>
+
+    <div class="skillsSection" id="skills">
+        <div class="container">
+            <div class="allSkills">
+                <h2>MY SKILLS</h2>
+                <p>I have following Skills!</p>
+                <div class="details">
+                    <span>HTML</span><span>90%</span>
+                </div>
+                <div class="bar">
+                    <div id="html"></div>
+                </div>
+                <div class="details">
+                    <span>CSS</span><span>70%</span>
+                </div>
+                <div class="bar">
+                    <div id="css"></div>
+                </div>
+                <div class="details">
+                    <span>JavaScript</span><span>65%</span>
+                </div>
+                <div class="bar">
+                    <div id="js"></div>
+                </div>
+                <div class="details">
+                    <span>React</span><span>20%</span>
+                </div>
+                <div class="bar">
+                    <div id="react"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="projectSection" id="projects">
+    <h2>PROJECTS</h2>
+    <div class="procards">
+        <div class="procard">
+            <div class="img"><img src="https://alisufiankhan.github.io/Sample/Images/Home_Screen_Image.png" alt=""></div>
+            <h3>CopyWriting</h3>
+            <p>CopyWriting Agency Website</p>
+            <button> <a href="https://alisufiankhan.github.io/Sample/">Visit Link</a></button>
+        </div><button> <a href="https://alisufiankhan.github.io/Countries/">Visit Link<
+        </div>
+    
+
+    </div>
+</div>
+
+<footer class="footer" id="contact">
+    <div class="footer-content">
+      <h3 style="background-color: #127E78;">Shubhangini</h3>
+      <p style="background-color: #127E78;">Contact With me through the following Links</p>
+      <a href="https://instagram.com/shubhangini_jakkal?igshid=OGQ5ZDc2ODk2ZA==">instagram</a>
+      <p  style="background-color: #127E78;">Made with ❤  By Shubhangini</p>
+    </div>
+  </footer>
+  
+    <script>
+        var btn = document.getElementById('btn')
+        btn.addEventListener('click', function () {
+
+            let nav = document.getElementById('nav')
+            // console.log(ul)
+            nav.classList.toggle("hide");
+            var icon = document.getElementById('icon')
+            if (icon.classList.contains('fa-bars')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-xmark');
+            } else {
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            }
+        })
+    </script>
+</body>
+
+</html>
